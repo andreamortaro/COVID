@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Strategie di controllo e stima dei parametri per modelli
-epidemiologici applicati al COVID19</title>
+    <title>Strategie di controllo e stima dei parametri per modelli epidemiologici applicati al COVID19</title>
 
-    <meta name="description" content="Simulazione de me nona in cariola">
-    <meta name="author" content="Pinco Pallo">
+    <meta name="description" content="Strategie di controllo">
+    <meta name="author" content="Andrea Mortaro">
 
     <!-- <link rel="stylesheet" href="dist/reset.css"> -->
     <link rel="stylesheet" href="dist/reveal.css">
@@ -26,30 +25,27 @@ epidemiologici applicati al COVID19</title>
 	  <p><b>Università degli Studi di Verona</b><br>
 	    DIPARTIMENTO DI INFORMATICA
 	  </p>
-	  <p style="font-size:30px;">
+	  <p style="font-size:25px;">
 	    Corso di Laurea in Matematica Applicata <br>
-	    Aramaico antico
+		Tesi di Laurea Triennale
 	  </p>
-	  <h3>Strategie di controllo e stima dei parametri per modelli
-epidemiologici applicati al COVID19</h3>
+	  <h4>Strategie di controllo e stima dei parametri per modelli
+epidemiologici applicati al COVID19</h4>
 
 	  <table style="width:80%; frameborder=1; font-size:20px;">
 	    <tr >
 	      <td style="width:50%;">Tesi di laurea di:<br>
-		Pinco Pallo
+		Andrea Mortaro
 	      </td>
 	      <td>Relatore:<br>
-		Prof.ssa Ing. Carla Rossi<br>
-		Correlatori:<br>
-		Chiar.mo Prof. Ing. Gasparo <br>
-		Dott. Ing. Ciarli Brown
+			Prof. Dott. Giacomo Albi<br>
 	      </td>
 	    </tr>
 	  </table>
 	</section>
 
 
-
+<!--
 	<section data-auto-animate data-auto-animate-unmatched="fade">
 	  <h3>Contesto</h3>
 	  <ul>
@@ -81,7 +77,7 @@ epidemiologici applicati al COVID19</h3>
 	  <img src="mm/schema_rete_ottica.gif" alt="rete ottica">
 	</section>
 
-
+-->
 
 	<section data-auto-animate data-auto-animate-unmatched="fade">
 	  <h3>Il modello SIR</h3>
@@ -90,7 +86,7 @@ epidemiologici applicati al COVID19</h3>
 	    <li><i>gli Infetti (I)</i>, ovvero gli indidui che hanno contratto l’infezione e che	sono in grado di trasmettere la malattia;</li>
 	    <Li><i>i Rimossi (R)</i>, ovvero gli individui che non partecipano al processo epidemico perché durante il decorso dell’epidemia sono isolati, o hanno contratto la malattia e sono guariti, oppure morti a causa dell’infezione;</li>
 	  </ul>
-	  <img src="mm/sir.svg" alt="modello sir" width="100%"/>
+	  <img src="immagini/sir.svg" alt="modello sir" width="100%"/>
 	</section>
 
 
@@ -99,7 +95,7 @@ epidemiologici applicati al COVID19</h3>
 
 	<section data-auto-animate data-auto-animate-unmatched="fade">
 	  <h3>Il modello SIR</h3>
-	  <img src="mm/sir.svg" alt="modello sir" width="100%"/>
+	  <img src="immagini/sir.svg" alt="modello sir" width="100%"/>
 
 	  \[\begin{aligned}
 	  S(t) + I(t) + R(t) &amp; = costante = N \quad \\
@@ -154,8 +150,9 @@ epidemiologici applicati al COVID19</h3>
 	  \end{aligned} \]
 	</section>
 
+
 	<section>
-	  <h3>Formula giusta</h3>
+	  <h3>Invece il modello SEIR</h3>
 
 	  \[\begin{aligned}
 	  \left\{
@@ -171,15 +168,15 @@ epidemiologici applicati al COVID19</h3>
 
 
 
-
 	<section data-auto-animate data-auto-animate-unmatched="fade">
-	  <h3>Figura giusta</h3>
-	  <img src="mm/flatteningthecurve.svg" alt="modello sir" width="50%"/>
+	  <h3>Appiattire la curva!</h3>
+	  <img src="immagini/flatteningthecurve.svg" alt="modello sir" width="50%"/>
 	</section>
 
+
 	<section data-auto-animate data-auto-animate-unmatched="fade">
-	  <h3>Figura giusta</h3>
-	  <img src="mm/flatteningthecurve.svg" alt="modello sir" width="20%"/>
+	  <h3>Appiattire la curva!</h3>
+	  <img src="immagini/flatteningthecurve.svg" alt="flat" width="20%"/>
 	  <p style="text-align:left;">Dove:</p>
 	  <ul style="font-size:40px;">
 	    <li class="fragment grow">Primo</li>
@@ -194,21 +191,29 @@ epidemiologici applicati al COVID19</h3>
 
 	  <h3>Batteria di grafici</h3>
 
-	  <table style="width:80%; font-size:20px;">
+	  <table style="width:70%; font-size:20px;">
 	    <tr>
 	      <td style="width:50%; border-bottom:0px;">
-		<img class="fragment fade-right" src="mm/vaccination/subplot1.svg" alt="modello sir" />
+		<img class="fragment fade-right"
+			 src="immagini/vaccination/subplot1.svg"
+			 alt="modello sir" />
 	      </td>
 	      <td style="border-bottom:0px;">
-		<img class="fragment fade-left"src="mm/vaccination/subplot2.svg" alt="modello sir" />
+		<img class="fragment fade-left"
+			 src="immagini/vaccination/subplot2.svg"
+			 alt="modello sir" />
 	      </td>
 	    </tr>
 	    <tr>
 	      <td style="width:50%; border-bottom:0px;">
-		<img class="fragment fade-right" src="mm/vaccination/subplot3.svg" alt="modello sir"/>
+		<img class="fragment fade-right"
+			 src="immagini/vaccination/subplot3.svg"
+			 alt="modello sir"/>
 	      </td>
 	      <td style="border-bottom:0px;">
-		<img class="fragment fade-left" src="mm/vaccination/subplot4.svg" alt="modello sir" />
+		<img class="fragment fade-left"
+		     src="immagini/vaccination/subplot4.svg"
+			 alt="modello sir" />
 	      </td>
 	    </tr>
 
@@ -217,8 +222,7 @@ epidemiologici applicati al COVID19</h3>
 	</section>
 
 
-
-
+<!--
 
 
 	<section data-auto-animate data-auto-animate-unmatched="fade">
@@ -257,6 +261,7 @@ epidemiologici applicati al COVID19</h3>
 	  <p class="fragment" style="text-align:left;">Grazie Matteo!</p>
 	</section>
 
+
 	<section data-auto-animate data-auto-animate-unmatched="fade" data-background="#b5533c" data-background-transition="fade">
 	  <h3>Conclusioni</h3>
 	  <audio src="mm/Applausi.mp4" data-autoplay></audio>
@@ -268,7 +273,7 @@ epidemiologici applicati al COVID19</h3>
 
 	</section>
 
-
+-->
       </div>
     </div>
 
